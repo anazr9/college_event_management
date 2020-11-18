@@ -1,0 +1,16 @@
+create database eventmanagement;
+use eventmanagement;
+create table events(
+ id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+evtname varchar(30),
+dptname varchar(30),
+description varchar(200)
+);
+create table register(
+id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+fullname varchar(30),
+classname varchar(30),
+rollno varchar(30),
+mobile varchar(30),
+email varchar(30)
+);

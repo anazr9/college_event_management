@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block title %}Event Registration{% endblock %}
+{% block content %}
+<h2>Event Registration</h2>
+<div>
+<form action="{{ url_for('register') }}" method="post">
+Full Name:</br>
+<input type="text" name="fname" placeholder="Your name"  required></br>
+Class:</br>
+<input type="text" name="cname" placeholder="Your class"  required></br>
+Roll No:</br>
+<input type="text" name="rno" placeholder="Your Roll no" required></br>
+Mobile:</br>
+<input type="text" name="mobile" placeholder="Your Mobile number"  required></br>
+Email:</br>
+<input type="text" name="email" placeholder="Your email address"  required></br>
+<input type="text" name="eventname" value="{{a}}" style="visibility: hidden;"></br>
+<div class="msg">{{ msg  }}</div>
+<input type="submit" name="btn_submit" value="Apply" class="button1">
+</form>
+</div>
+{% endblock %}

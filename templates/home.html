@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h2>List of Events:</h2>
+{% for event in events%}
+<div>
+Event name:
+{{event [1] }}</br>
+Department name:
+ {{event [2] }} </br>
+Event Description:
+{{event [3] }}
+</br>
+<form method="POST">
+<button name="event" type="submit" value="{{event [1] }}">Apply</button>
+</form>
+</div>
+{% endfor%}
+{% endblock %}
