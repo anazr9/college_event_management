@@ -4,3 +4,4 @@ A web application where an organizer can create events and post the event on the
 1. Flask
 2. flask-mysql
 3. MySQL-python
+Guided by Prof Mudassar Ansari(Royal College, Mira Road)
